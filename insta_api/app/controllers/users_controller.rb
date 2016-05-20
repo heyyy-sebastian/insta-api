@@ -32,7 +32,7 @@ end
   end
 
   def show
-    debugger
+    #debugger
   end
 
 end
