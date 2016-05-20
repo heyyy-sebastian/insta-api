@@ -1,0 +1,13 @@
+<a href="https://api.instagram.com/oauth/authorize/?client_id=">Click here to login</a>
+
+<%= @user%>
+
+<h1>Welcome <%= @user.username %></h1>
+
+<img src="<%= @user.profile_picture %>" alt="">
+
+<p>followed_by: <%= @user.followed_by %></p>
+
+<p>follows: <%= @user['follows'] %></p>
+
+<p>media: <%= @user.media %></p>
