@@ -1,5 +1,8 @@
+=PRIVACY POLICY
+This app is meant for educational purposes only and will not be published online
+for revenue-generating purposes. User information/search history will not be stored
+in a server database; information from Instagram will be requested only from the public content scope for a specific location from user input.
 
-changes to readme
 == README
 
 This README would normally document whatever steps are necessary to get the
