@@ -18,17 +18,20 @@ $(function() {
         console.log(results[0].geometry.bounds.H.H);//extracts latitude
         console.log(results[0].geometry.bounds.j.H);//extracts longitude
         var lat = results[0].geometry.bounds.H.H;
-        var long = results[0].geometry.bounds.j.H;
+        var lng = results[0].geometry.bounds.j.H;
         var access_token_js = $('#access_token_for_js').val();
 
         //ajax call to instagram
         //lat/long params
         //success = display photos
 
+
+        url = "https://api.instagram.com/v1/media/search?lat="+lat+"&lng="+lng+"&access_token="+access_token_js
+        debugger
         $.ajax({
           method: "GET",
           // url: "https://api.instagram.com/v1/tags/shakeshack/media/recent?access_token="+access_token_js,
-          url: "https://api.instagram.com/v1/media/search?lat="+lat+"&lng="+long+"&access_token="+access_token_js,
+          url: url,
           //insert hidden access token
           dataType: "jsonp",
           success: function(data){
