@@ -27,7 +27,6 @@ $(function() {
 
 
         url = "https://api.instagram.com/v1/media/search?lat="+lat+"&lng="+lng+"&access_token="+access_token_js
-        debugger
         $.ajax({
           method: "GET",
           // url: "https://api.instagram.com/v1/tags/shakeshack/media/recent?access_token="+access_token_js,
@@ -35,7 +34,13 @@ $(function() {
           //insert hidden access token
           dataType: "jsonp",
           success: function(data){
-            console.log(data);
+
+            var response = data
+            console.log(response)
+            for (i = 0; i < response['data'].length; i++){
+              $('.thebody').append("<img src=" + '"' + response['data'][i]['images']['low_resolution']['url']+ '"' + ">")
+            }
+            debugger
           }//end success function
         });//end ajax call
 
