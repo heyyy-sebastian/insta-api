@@ -1,15 +1,27 @@
 
-<a href="https://api.instagram.com/oauth/authorize/?client_id=">Click here to login</a>
+  <script src="https://maps.googleapis.com/maps/api/js?key=<%=@map_api_key%>&callback=initMap">
+  </script>
 
-<%= @user%>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+<a href="https://api.instagram.com/oauth/authorize/?client_id=<%=@client_id%>&redirect_uri=http://loca
+lhost:3000/callback&response_type=code">Click here to login</a>
+<!--If logged in, show this stuff-->
 
 <h1>Welcome <%= @user.username %></h1>
 
 <img src="<%= @user.profile_picture %>" alt="">
 
-<p>followed_by: <%= @user.followed_by %></p>
+<div id="search-panel">
+      <input id="address" type="textbox" value="New York, NY">
+      <input id="submit" type="button" value="Geocode">
+</div>
 
-<p>follows: <%= @user['follows'] %></p>
+<!-- <script src="/maps_script.js"></script> -->
+<!-- <script src="other_script.js"></script> -->
 
-<p>media: <%= @user.media %></p>
 
+
+<input type='hidden' id="access_token_for_js" value="<%= @access_token_js %>">
