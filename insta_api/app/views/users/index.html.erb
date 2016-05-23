@@ -6,21 +6,9 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
-<a href="https://api.instagram.com/oauth/authorize/?client_id=<%=@client_id%>&redirect_uri=http://loca
-lhost:3000/callback&response_type=code">Click here to login</a>
-<!--If logged in, show this stuff-->
+<a href='https://api.instagram.com/oauth/authorize/?client_id=<%=@id%>&redirect_uri=<%=@red%>&response_type=token'>Log In</a>
 
-<h1>Welcome <%= @user.username %></h1>
 
-<img src="<%= @user.profile_picture %>" alt="">
-
-<div id="search-panel">
-      <input id="address" type="textbox" value="New York, NY">
-      <input id="submit" type="button" value="Geocode">
-</div>
-
-<!-- <script src="/maps_script.js"></script> -->
-<!-- <script src="other_script.js"></script> -->
 
 
 
