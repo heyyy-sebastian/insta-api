@@ -25,7 +25,6 @@ $(function() {
         //lat/long params
         //success = display photos
 
-
         url = "https://api.instagram.com/v1/media/search?lat="+lat+"&lng="+lng+"&access_token="+access_token_js
 
         $.ajax({
@@ -47,6 +46,15 @@ $(function() {
 
             //})//end function to pull out img urls
 
+=======
+
+            var response = data
+            console.log(response)
+            for (i = 0; i < response['data'].length; i++){
+              $('.thebody').append("<img src=" + '"' + response['data'][i]['images']['low_resolution']['url']+ '"' + ">")
+            }
+            debugger
+>>>>>>> 7aa87760212e030434388e02d30a13be1da3375a
           }//end success function
         });//end ajax call
 
