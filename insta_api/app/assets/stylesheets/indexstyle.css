@@ -4,7 +4,7 @@
 
 #welcome{
   height: 40%;
-  width: 80%;
+  width: 70%;
   background-size: cover;
   border-radius: 20px;
   text-align: center;
@@ -43,7 +43,7 @@
 #cardinfo{
   margin: auto;
   border-radius: 20px;
-  width: 60%;
+  width: 50%;
   opacity: .8;
 }
 
@@ -53,4 +53,8 @@
 
 #indexfooter{
   margin-top: 0px;
+}
+
+#cardinfo > div {
+  border-radius: 20px;
 }
