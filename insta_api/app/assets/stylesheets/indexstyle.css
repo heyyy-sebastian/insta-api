@@ -26,14 +26,14 @@
 }
 
 #container {
-  background-image: url("/assets/neighborhood.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
 }
 
 #welcomewrap {
+  background-image: url("/assets/neighborhood.jpg");
+  background-size: cover;
   padding-top: 3%;
+  width: 100%;
+  height: 100%;
 }
 
 #begin_btn{
