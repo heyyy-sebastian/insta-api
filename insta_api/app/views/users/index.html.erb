@@ -12,11 +12,24 @@
 
 <div id="container" class="container">
   <div id="welcomewrap" class="center-align">
-    <div class="valign-wrapper center-align" id="welcome">
+    <div class="valign-wrapper center-align z-depth-4" id="welcome">
       <h1 id="welcometext" class="valign">Welcome to the Neighborhood!</h1>
     </div>
     <br>
-    <a href='https://api.instagram.com/oauth/authorize/?client_id=<%=@id%>&redirect_uri=<%=@red%>&response_type=token' class="waves-effect waves-light btn-large" id="begin_btn">Click to Begin!</a>
+    <a href='https://api.instagram.com/oauth/authorize/?client_id=<%=@id%>&redirect_uri=<%=@red%>&response_type=token' class="waves-effect waves-light btn-large z-depth-2" id="begin_btn"><i class="material-icons left">search</i>Click to Begin</a>
+    <br>
+    <br>
+      <div class="row">
+        <div class="center-align z-depth-3" id="cardinfo">
+          <div class="card blue darken-3">
+            <div class="card-content white-text">
+              <span class="card-title">Explore. Discover. Celebrate.</span>
+              <p>What's Good in the Neighborhood is a web-based application that's designed to help you learn more about the world we live in. Simply enter a location or zipcode and allow us to show you what's good in the neighborhood!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
   </div>
 </div>
 

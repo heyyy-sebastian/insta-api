@@ -6,12 +6,13 @@
   height: 40%;
   width: 80%;
   background-size: cover;
-  border-radius: 35px;
+  border-radius: 20px;
   text-align: center;
-  background-color: black;
-  opacity: .7;
+  background: linear-gradient(
+                  #64b5f6, #1565c0);
+  opacity: .8;
   margin: auto;
-
+  border: 2px solid #42a5f5;
 
   /* background-image: url("/assets/neighborhood.jpg"); */
 }
@@ -35,5 +36,12 @@
 }
 
 #begin_btn{
-  width:30%;
+  /* width:30%; */
+}
+
+#cardinfo{
+  margin: auto;
+  border-radius: 20px;
+  width: 60%;
+  opacity: .8;
 }
