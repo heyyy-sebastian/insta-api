@@ -39,7 +39,7 @@ $(function() {
           console.log(response);
           $('.thebody').empty();
             for (i = 0; i < response['data'].length; i++){
-              $('.thebody').append("<img src=" + '"' + response['data'][i]['images']['low_resolution']['url']+ '"' + ">")
+              $('.thebody').append("<img src=" + '"' + response['data'][i]['images']['standard_resolution']['url']+ '"' + ">")
              }//end for loop
             //data.forEach(function(entry){
 
