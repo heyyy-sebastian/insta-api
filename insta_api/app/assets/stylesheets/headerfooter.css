@@ -1,0 +1,21 @@
+/*nav styling*/
+.nav-class>{
+  display: inline-block;
+}
+
+#logo{
+  padding-top: .5em;
+}
+
+.nav-class h4{
+  padding: .5em;
+}
+
+/*footer styling*/
+.footer-copyright a:hover{
+ opacity: .7;
+}
+
+.footer-txt{
+  font-size: .9em;
+}
