@@ -1,5 +1,6 @@
 $(function() {
-    console.log( "ready!" );
+  console.log( "ready!" );
+
 
 
 //create a new geocoder object and add click function to trigger
@@ -37,21 +38,28 @@ $(function() {
             var stuff = data['data'];
             var response = data;
           console.log(response);
-          $('.thebody').empty();
+          $('.grid').empty();
             for (i = 0; i < response['data'].length; i++){
-              $('.thebody').append("<img src=" + '"' + response['data'][i]['images']['low_resolution']['url']+ '"' + ">")
+              $('.grid').append("<img src=" + '"' + response['data'][i]['images']['standard_resolution']['url']+ '"' + ">")
              }//end for loop
             //data.forEach(function(entry){
-
-
             //})//end function to pull out img urls
-
             var response = data
             console.log(response)
             for (i = 0; i < response['data'].length; i++){
-              $('.thebody').append("<img src=" + '"' + response['data'][i]['images']['low_resolution']['url']+ '"' + ">")
+              $('.grid').append("<img src=" + '"' + response['data'][i]['images']['standard_resolution']['url']+ '"' + ">")
             }
+
+                   var $grid = $('.grid').masonry({
+              itemSelector: 'img',
+              columnWidth: 320,
+            });
+            // layout Masonry after each image loads
+            $grid.imagesLoaded().progress( function() {
+              $grid.masonry('layout');
+            });
           }//end success function
+
         });//end ajax call
 
       } else {
@@ -61,11 +69,13 @@ $(function() {
   }
 
 
+
+
 //create a new geocoder object and add click function to trigger
 //ajax call to google maps api
     document.getElementById('submit').addEventListener('click', function() {
-      geocodeAddress(new google.maps.Geocoder());
-
+      var g = new google.maps.Geocoder();
+      geocodeAddress(g);
     });
 
 
