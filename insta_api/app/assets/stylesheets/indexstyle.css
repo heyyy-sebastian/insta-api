@@ -1,0 +1,47 @@
+#begin_btn {
+  border-radius: 30px;
+}
+
+#welcome{
+  height: 40%;
+  width: 80%;
+  background-size: cover;
+  border-radius: 20px;
+  text-align: center;
+  background: linear-gradient(
+                  #64b5f6, #1565c0);
+  opacity: .8;
+  margin: auto;
+  border: 2px solid #42a5f5;
+
+  /* background-image: url("/assets/neighborhood.jpg"); */
+}
+
+#welcometext{
+  text-align: center;
+  color: white;
+  margin:auto;
+  font-size: 8vw;
+}
+
+#container {
+  background-image: url("/assets/neighborhood.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+#welcomewrap {
+  padding-top: 3%;
+}
+
+#begin_btn{
+  /* width:30%; */
+}
+
+#cardinfo{
+  margin: auto;
+  border-radius: 20px;
+  width: 60%;
+  opacity: .8;
+}
