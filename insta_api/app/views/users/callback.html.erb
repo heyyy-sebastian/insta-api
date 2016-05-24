@@ -1,18 +1,17 @@
 success!!
-  <script src="https://maps.googleapis.com/maps/api/js?key=<%=@map_api_key%>&callback=initMap">
-  </script>
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+
 <div id="search-panel">
-      <input id="address" type="textbox" value="New York, NY">
+      <input id="address" type="textbox" value="10010">
       <input id="submit" type="button" value="Search">
 </div>
 <div class="thebody"></div>
 
 <input type='hidden' id="access_token_for_js" value="<%= @act %>">
 
-<div class="thebody">
+
+<div class="grid">
+<!-- <div class="thebody"> -->
+
 
 </div>

@@ -2,7 +2,7 @@ require 'pry'
 require 'HTTParty'
 
 
-class UsersController < ActionController::Base
+class UsersController < ApplicationController
 
 
   def index
