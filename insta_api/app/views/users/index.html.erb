@@ -2,12 +2,23 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=<%=@map_api_key%>&callback=initMap">
   </script>
 
+<link rel="stylesheet" type="text/css" href="/app/assets/stylesheets/indexstyle.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
-<a href='https://api.instagram.com/oauth/authorize/?client_id=<%=@id%>&redirect_uri=<%=@red%>&response_type=token'>Log In</a>
+
+<div id="container" class="container">
+  <div id="welcomewrap" class="center-align">
+    <div class="valign-wrapper center-align" id="welcome">
+      <h1 id="welcometext" class="valign">Welcome to the Neighborhood!</h1>
+    </div>
+    <br>
+    <a href='https://api.instagram.com/oauth/authorize/?client_id=<%=@id%>&redirect_uri=<%=@red%>&response_type=token' class="waves-effect waves-light btn-large" id="begin_btn">Click to Begin!</a>
+  </div>
+</div>
+
+
 <input type='hidden' id="access_token_for_js" value="<%= @access_token_js %>">
-
-
-

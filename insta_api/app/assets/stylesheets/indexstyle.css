@@ -1,0 +1,39 @@
+#begin_btn {
+  border-radius: 30px;
+}
+
+#welcome{
+  height: 40%;
+  width: 80%;
+  background-size: cover;
+  border-radius: 35px;
+  text-align: center;
+  background-color: black;
+  opacity: .7;
+  margin: auto;
+
+
+  /* background-image: url("/assets/neighborhood.jpg"); */
+}
+
+#welcometext{
+  text-align: center;
+  color: white;
+  margin:auto;
+  font-size: 8vw;
+}
+
+#container {
+  background-image: url("/assets/neighborhood.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+#welcomewrap {
+  padding-top: 3%;
+}
+
+#begin_btn{
+  width:30%;
+}
