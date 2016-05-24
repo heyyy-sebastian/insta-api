@@ -41,17 +41,14 @@ $(function() {
           $('.grid').empty();
             for (i = 0; i < response['data'].length; i++){
               $('.grid').append("<img src=" + '"' + response['data'][i]['images']['standard_resolution']['url']+ '"' + ">")
-              $('.thebody').append("<img src=" + '"' + response['data'][i]['images']['standard_resolution']['url']+ '"' + ">")
+              // $('.thebody').append("<img src=" + '"' + response['data'][i]['images']['standard_resolution']['url']+ '"' + ">")
              }//end for loop
             //data.forEach(function(entry){
             //})//end function to pull out img urls
-            var response = data
-            console.log(response)
-            for (i = 0; i < response['data'].length; i++){
-              $('.grid').append("<img src=" + '"' + response['data'][i]['images']['standard_resolution']['url']+ '"' + ">")
-            }
 
-                   var $grid = $('.grid').masonry({
+
+            // masonry
+            var $grid = $('.grid').masonry({
               itemSelector: 'img',
               columnWidth: 320,
             });
