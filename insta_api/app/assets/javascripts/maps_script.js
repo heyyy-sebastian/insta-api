@@ -40,7 +40,7 @@ $(function() {
           console.log(response);
           $('.grid').empty();
             for (i = 0; i < response['data'].length; i++){
-              $('.grid').append("<img src=" + '"' + response['data'][i]['images']['standard_resolution']['url']+ '"' + ">")
+              $('.grid').append("<img class='img-pad' src=" + '"' + response['data'][i]['images']['low_resolution']['url']+ '"' + ">")
               // $('.thebody').append("<img src=" + '"' + response['data'][i]['images']['standard_resolution']['url']+ '"' + ">")
              }//end for loop
             //data.forEach(function(entry){
