@@ -12,3 +12,11 @@ width: 400px;
 margin: auto;
 }
 
+
+#search-panel > i {
+  margin-left: 20px;
+}
+
+#here{
+  font-family: 'Raleway', sans-serif;
+}
