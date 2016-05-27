@@ -20,3 +20,12 @@ margin: auto;
 #here{
   font-family: 'Raleway', sans-serif;
 }
+
+.grid{
+
+  height: 800px;
+}
+
+.clearfix{
+  height: 800px;
+}
